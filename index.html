@@ -154,6 +154,37 @@
   import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
   createChat({
     webhookUrl: 'https://phurin2547.app.n8n.cloud/webhook/b9cdf197-b17a-4666-a14d-8f3050f8e862/chat'
+
+    // --- START: Updated Changes ---
+
+    // 1. Updated Thai Text
+    title: 'สวัสดีครับ',
+    subtitle: 'พร้อมช่วยตลอด 24/7 ชม.ครับ!',
+    welcomeMessage: 'สวัสดีครับผมบังเดล มีอะไรถามเกี่ยวกับ CMUBS Phone ไหมครับ',
+    
+    // 2. Theme color (same as before) and new box styling
+    theme: {
+      colors: {
+        primary: '#2D3748'
+      },
+      // 3. "More Style Box" changes
+      chatWindow: {
+        // This adds rounded corners to match your product boxes
+        borderRadius: '10px', 
+        // This adds a shadow to make the chat window "pop"
+        boxShadow: '0 6px 12px rgba(0,0,0,0.15)' 
+      },
+      header: {
+        // This makes the header's top corners match the window's new radius
+        borderRadius: '10px 10px 0 0'
+      },
+      launcher: {
+        // This adds a subtle shadow to the launcher button
+        boxShadow: '0 4px 8px rgba(0,0,0,0.2)'
+      }
+    }
+    
+    // --- END: Updated Changes ---
   });
 </script>
 
